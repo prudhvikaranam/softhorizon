@@ -73,6 +73,7 @@ h3 {
 .services-container .container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .service {
   width: 20%;
