@@ -4,14 +4,19 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
 }
 h1 {
   font-size: 25px;
+  color: #115171;
+}
+p {
+  font-weight: 100;
 }
 /* Navigation */
 .navigation-container {
   display: flex;
-  /* width: 100%; */
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
@@ -31,42 +36,83 @@ h1 {
 }
 
 .landing-container .container {
-  background: linear-gradient(rgb(9 74 112 / 79%) 100%, rgb(195 3 3) 100%),
-    url(./assets/landingpage.png) no-repeat center;
+  background: linear-gradient(rgb(11 32 44 / 79%) 100%, rgb(0 0 0) 100%),
+    url(./assets/landingpage.jpg) no-repeat center;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
+  background-size: 100% 100%;
 }
-.quote1{
-    width: 60%;
+.quote1 {
+  width: 60%;
 }
 .quote1 p {
-  font-size: 25px;
+  font-size: 1.5rem;
   color: white;
 }
 /* Services */
 
 .services-container {
-  height: 80vh;
   text-align: center;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 47px 0px 0px 0px;
+  color: #0a3e5f;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.services-container .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service {
+  width: 20%;
+  margin: 5% 0%;
+}
+
+.service p {
+  background-color: #bbe7f9;
+  padding: 50% 2%;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.service div {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  margin: 0px 0px -30% 0px;
+  z-index: 1;
+  background: white;
 }
 /* About Us */
 
 .about-container {
-  height: 80vh;
   text-align: center;
 }
 /* Reviews */
 
 .reviews-container {
-  height: 80vh;
   text-align: center;
 }
 /* Contact */
 
 .contact-container {
-  height: 80vh;
   text-align: center;
 }
