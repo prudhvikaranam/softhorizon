@@ -61,4 +61,14 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
+
+.service{
+    width: 48%;
+}
+  
+.service img {
+    width: 86px;
+    height: 86px;
+  }
+
 }
