@@ -1,123 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="We work together to design, create and produce work
-    that we are proud of for the folks that we believe in."
-    />
+    <meta name="description" content="We work together to design, create and produce work
+    that we are proud of for the folks that we believe in." />
     <meta name="keywords" content="softhorizon" />
     <title>Soft Horizon</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/javascript/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/javascript/owl/dist/assets/owl.theme.default.min.css">
+    <script src="./assets/javascript/jquery.min.js"></script>
+    <script src="./assets/javascript/owl/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="body-container" id="body-container">
-      <!-- Navigation -->
-      <div class="navigation-container" id="navigation-container">
-        <img src="./assets//logo.PNG" alt="softhorizon" srcset="" />
-        <div class="nav-links" id="nav-link">
-          <a href="">Home</a>
-          <a href="#services-container">Services</a>
-          <a href="#about-container">About Us</a>
-          <a href="#reviews-container">Reviews</a>
-          <a href="#contact-container">Contact Us</a>
+        <!-- Navigation -->
+        <div class="navigation-container" id="navigation-container">
+            <img src="./assets//logo.PNG" alt="softhorizon" srcset="" />
+            <div class="nav-links" id="nav-link">
+                <a href="">Home</a>
+                <a href="#services-container">Services</a>
+                <a href="#about-container">About Us</a>
+                <a href="#reviews-container">Reviews</a>
+                <a href="#contact-container">Contact Us</a>
+            </div>
         </div>
-      </div>
 
-      <!-- Landing -->
-      <div class="landing-container" id="landing-container">
-        <div class="container" id="container">
-          <div class="quote" id="quote"></div>
-          <div class="quote1" id="quote1">
-            <p>
-              Welcome<br />We work together to design, create and produce work
-              that we are proud of for the folks that we believe in.
-            </p>
-          </div>
+        <!-- Landing -->
+        <div class="landing-container" id="landing-container">
+            <div class="container" id="container">
+                <div class="quote" id="quote"></div>
+                <div class="quote1" id="quote1">
+                    <p>
+                        Welcome<br />We work together to design, create and produce work that we are proud of for the folks that we believe in.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Services -->
-      <div class="services-container" id="services-container">
-        <h1>What We Do</h1>
-        <h2>
-          Softhorizon is a provider of IT services and software development
-          services. We have helped organizations and companies improve business
-          performance & enhance their competitiveness.
-        </h2>
-        <div class="container" id="container">
-          <div class="service" id="service">
-            <h3>IT Support</h3>
-            <div class="ITcontainer" id="ITcontainer">
-              <img src="./assets/services-IT.jpg" alt="" srcset="" /><!--
-  --><p>
-                We are available to consult with you or your staff when problems
-                arise with your software. This service can be either remote or
-                on-site assistance.
-              </p>
+        <!-- Services -->
+        <div class="services-container" id="services-container">
+            <h1>What We Do</h1>
+            <h2>
+                Softhorizon is a provider of IT services and software development services. We have helped organizations and companies improve business performance & enhance their competitiveness.
+            </h2>
+            <div class="container" id="container">
+                <div class="service" id="service">
+                    <h3>IT Support</h3>
+                    <div class="image" id="image">
+                        <img src="./assets/services-IT.jpg" alt="" srcset="" />
+                    </div>
+                    <p>
+                        We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
+                </div>
+                <div class="service" id="service">
+                    <h3>Cloud Services & Data Management</h3>
+                    <div class="image" id="image">
+                        <img src="./assets/services-cloud.jpg" alt="" srcset="" />
+                    </div>
+                    <p>
+                        We will work with you to establish the appropriate cloud size and available resources for your business.
+                    </p>
+                </div>
+                <div class="service" id="service">
+                    <h3>Web and Android development</h3>
+                    <div class="image" id="image">
+                        <img src="./assets/services-web.png" alt="" srcset="" />
+                    </div>
+                    <p>
+                        We will work with you to establish the appropriate web development and android applications for your business.
+                    </p>
+                </div>
+                <div class="service" id="service">
+                    <h3>Server Support</h3>
+                    <div class="image" id="image">
+                        <img src="./assets/services-server.jpg" alt="" srcset="" />
+                    </div>
+                    <p>
+                        We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="service" id="service">
-            <h3>Cloud Services & Data Management</h3>
-            <div class="cloudContainer" id="cloudContainer">
-              <img src="./assets/services-cloud.jpg" alt="" srcset="" />
-
-              <p>
-                We will work with you to establish the appropriate cloud size
-                and available resources for your business.
-              </p>
-            </div>
-          </div>
-          <div class="service" id="service">
-            <h3>Web and Android development</h3>
-            <div class="webContainer" id="webContainer">
-              <img src="./assets/services-web.png" alt="" srcset="" />
-
-              <p>
-                We will work with you to establish the appropriate web
-                development and android applications for your business.
-              </p>
-            </div>
-          </div>
-          <div class="service" id="service">
-            <h3>Server Support</h3>
-            <div class="serverContainer" id="serverContainer">
-              <img src="./assets/services-server.jpg" alt="" srcset="" />
-
-              <p>
-                We are available to consult with you or your staff when problems
-                arise with your software. This service can be either remote or
-                on-site assistance.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- About Us -->
-      <div class="about-container" id="about-container">
-        <h1>About goes here</h1>
-      </div>
+        <!-- About Us -->
+        <div class="about-container" id="about-container">
+            <h1>About Us</h1>
+            <div class="aboutheader" id="aboutheader">
+                <div class="aboutCompany" id="aboutCompany">
+                    <h3>Our Philosophy</h3>
+                    <p> To become part of your extended team and help companies successfully expand their tech capability.
+                    </p>
+                </div>
+                <div class="aboutCompany" id="aboutCompany">
+                    <h3>High ROI </h3>
+                    <p> Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to us, you can focus on what you do best--running your business.
+                    </p>
+                </div>
+                <div class="aboutCompany" id="aboutCompany">
+                    <h3>Satisfaction Guaranteed</h3>
+                    <p> That's why our goal is to provide an experience that is tailored to your company's needs. No matter the budget, we pride ourselves on providing professional customer service.</p>
+                </div>
+            </div>
+            <h2>Our Partners</h2>
+            <div class="partners" id="partners">
+                <div class="partner" id="partner">
+                    <img src="./assets/sysnet_partner.png" alt="sysnet_partner">
+                </div>
+                <div class="partner" id="partner">
+                    <img src="./assets/Uniserve_partner.png" alt="sysnet_partner">
+                </div>
+            </div>
+        </div>
 
-      <!-- Reviews -->
-      <div class="reviews-container" id="reviews-container">
-        <h1>Reviews goes here</h1>
-      </div>
+        <!-- Reviews -->
+        <div class="reviews-container" id="reviews-container">
+            <h1>Reviews</h1>
+            <div class="carousel" id="carousel">
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="item-image" id="item-image">
+                                    <img src="./assets//javascript/avatars/avatar1.png" alt="">
+                                </div>
+                                <div class="item-stars" id="item-stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>What a wonderful bunch of developers and designers, its really great to see such a lovely team who works on such a beautiful design.</p>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item-image" id="item-image">
+                                    <img src="./assets/javascript/avatars/avatar2.png" alt="" srcset="">
+                                </div>
+                                <div class="item-stars" id="item-stars">
 
-      <!-- Contact -->
-      <div class="contact-container" id="contact-container">
-        <h1>Contact goes here</h1>
-      </div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                </div>
+                                <p>Good Service by the engineer. I liked the overall service</p>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item-image" id="item-image">
+                                    <img src="./assets/javascript/avatars/avatar3.png" alt="" srcset="">
+                                </div>
+                                <div class="item-stars" id="item-stars">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>Good and Satisfied service by the team of SoftHorizon. Engineer's are doing a great job.
+                                </p>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item-image" id="item-image">
+                                    <img src="./assets/javascript/avatars/avatar4.png" alt="" srcset="">
+                                </div>
+                                <div class="item-stars" id="item-stars">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>Fast and satisfied service. The team at SoftHorizon is young and energetic. I appreciate the effort they put in to deliver our product.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
-  </body>
+
+    <!-- Contact -->
+    <div class="contact-container" id="contact-container">
+
+
+        <div class="contact" id="contact">
+            <div class="image" id="image">
+                <img src="./assets/images//contact.jpg" alt="" srcset="" />
+            </div>
+            <div class="form" id="form">
+
+                <h1>Contact Us</h1>
+                <input type="text" placeholder="Name" /><br />
+                <input type="tel" placeholder="Mobile" /><br />
+                <input type="email" placeholder="Email ID" /><br />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Please enter your Message"></textarea>
+                <div class="submitBtn" id="submitBtn">
+                    <button class="btn-submit" id="btn-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="locationMap" id="locationMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15553.578726857057!2d77.58825716681089!3d12.946577766286882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c66d3e96eb%3A0x4e9fad863fb4338c!2sWilson%20Garden%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1656616500750!5m2!1sen!2sin"
+                height="450" style="border:0;width:100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer" id="footer">
+        <div class="footerContent" id="footerContent">
+            <h2>Lorem Ipsum sone lore</h2>
+            <br /><br />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facilis quasi, voluptate delectus voluptatem eaque nostrum quaerat nisi optio saepe omnis dicta libero molestiae consectetur modi ducimus numquam, voluptatum beatae.
+            </p>
+        </div>
+        <div class="footerSubscriber" id="footerSubscriber">
+            <h2>Subscriber to get latest news</h2>
+        </div>
+
+        <div class="footerMap" id="footerMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.643507727084!2d78.55018711418813!3d17.428887706195958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9959ac947a59%3A0x389876e7109562de!2sVyjayanthi%20Cinema!5e0!3m2!1sen!2sin!4v1624610591630!5m2!1sen!2sin"
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>

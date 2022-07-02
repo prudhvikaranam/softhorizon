@@ -4,8 +4,9 @@
 */
 
 @media (min-width: 1281px) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
     ##Device = Laptops, Desktops
@@ -13,8 +14,9 @@
   */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
     ##Device = Tablets, Ipads (portrait)
@@ -22,8 +24,9 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
     ##Device = Tablets, Ipads (landscape)
@@ -31,8 +34,15 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+    /* CSS */
+    .service {
+        width: 48%;
+    }
+    .service p {
+        padding: 33% 2% 18% 2%;
+    }
 }
+
 
 /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -40,19 +50,24 @@
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
-  .quote1 {
-    width: 100%;
-  }
-
-  .services-container .container {
-    flex-wrap: wrap;
-  }
-
-  .service {
-    width: 48%;
-  }
+    /* CSS */
+    .quote1 {
+        width: 100%;
+    }
+    .services-container .container {
+        flex-wrap: wrap;
+    }
+    .service {
+        width: 48%;
+    }
+    .service p {
+        padding: 33% 2% 18% 2%;
+    }
+    h3 {
+        height: 62px;
+    }
 }
+
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -60,15 +75,15 @@
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
-
-.service{
-    width: 48%;
-}
-  
-.service img {
-    width: 86px;
-    height: 86px;
-  }
-
+    /* CSS */
+    .service {
+        width: 48%;
+    }
+    .service img {
+        width: 86px;
+        height: 86px;
+    }
+    h3 {
+        height: 62px;
+    }
 }
