@@ -172,7 +172,7 @@ h3 {
 }
 
 .carousel {
-    padding: 0px 25px
+    padding: 0px 70px
 }
 
 .owl-stage {
@@ -274,4 +274,34 @@ h3 {
 
 .footer div {
     width: 30%;
+}
+
+.owl-prev,
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border: 0px solid black;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: white !important;
+}
+
+.owl-prev {
+    left: -40px;
+}
+
+.owl-next {
+    right: -40px;
+}
+
+.owl-prev i,
+.owl-next i {
+    transform: scale(3, 3);
+    color: #ccc;
 }

@@ -7,6 +7,7 @@ $(document).ready(function() {
         autoplay: false,
         autoplayTimeout: 2000,
         nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         autoWidth: false,
         responsiveClass: true,
         responsive: {
