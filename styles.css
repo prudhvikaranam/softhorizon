@@ -158,6 +158,19 @@ h3 {
     text-align: center;
 }
 
+.initial {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ced0cd;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #8c8585;
+    font-weight: bold;
+}
+
 .carousel {
     padding: 0px 25px
 }
@@ -190,6 +203,10 @@ h3 {
 
 
 /* Contact */
+
+.ourContact {
+    text-align: center;
+}
 
 .contact-container {
     display: flex;
