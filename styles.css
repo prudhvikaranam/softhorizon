@@ -337,8 +337,10 @@ h3 {
 .mobileNavLink {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 12px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    height: 90%;
+    justify-content: space-evenly;
 }
 
 .mobileNavLink a {
@@ -357,6 +359,11 @@ h3 {
 }
 
 .closeNav {
+    color: #53aed3;
     text-align: right;
-    margin: 14px 35px 0px 0px;
+    margin: 0px 17px 0px 0px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
