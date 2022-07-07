@@ -1,3 +1,26 @@
+let getIcon = document.getElementById('navHamburger');
+let outSideNavBar = document.getElementById('mobileNavigation');
+let closeIcon = document.getElementById('closeNav');
+getIcon.addEventListener('click', openNavContainer);
+closeIcon.addEventListener('click', closeNavContainer);
+window.addEventListener('click', outsideClick);
+
+
+function openNavContainer() {
+    outSideNavBar.style.display = "flex";
+}
+
+function closeNavContainer() {
+    outSideNavBar.style.display = "none";
+}
+
+function outsideClick(e) {
+    if (e.target == outSideNavBar) {
+        outSideNavBar.style.display = "none";
+    }
+}
+
+
 $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         items: 3,

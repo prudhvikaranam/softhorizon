@@ -26,6 +26,10 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
 }
 
 .nav-links a {
@@ -306,4 +310,53 @@ h3 {
 .owl-next i {
     transform: scale(3, 3);
     color: #ccc;
+}
+
+.mobileNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1000;
+    border-radius: 5px;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+}
+
+.mobileNavcontainer {
+    width: 55%;
+    background: rgb(252 255 255 / 90%);
+    border-radius: 5px;
+    height: 80%;
+    text-align: center;
+}
+
+.mobileNavLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px 0px 0px 0px;
+}
+
+.mobileNavLink a {
+    margin: 20px 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fa.fa-bars {
+    font-size: 29px;
+    color: #53aed3;
+}
+
+.mobileNavigation {
+    display: none;
+}
+
+.closeNav {
+    text-align: right;
+    margin: 14px 35px 0px 0px;
 }
