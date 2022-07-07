@@ -66,6 +66,16 @@
     h3 {
         height: 62px;
     }
+    .aboutheader {
+        display: inherit;
+        padding: 25px 15px 10px 15px;
+    }
+    .aboutCompany {
+        padding: 0px 5px;
+    }
+    .partners .partner img {
+        width: 75%;
+    }
 }
 
 
@@ -85,5 +95,15 @@
     }
     h3 {
         height: 62px;
+    }
+    .aboutheader {
+        display: inherit;
+        padding: 25px 15px 10px 15px;
+    }
+    .aboutCompany {
+        padding: 0px 5px;
+    }
+    .partners .partner img {
+        width: 75%;
     }
 }

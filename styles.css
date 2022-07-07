@@ -139,6 +139,16 @@ h3 {
     display: flex;
     justify-content: space-around;
     padding: 42px 0px;
+    align-items: center;
+    /* background-color: #bbe7f9; */
+}
+
+.partners .partner {
+    width: 50%;
+}
+
+.partners .partner img {
+    width: 50%;
 }
 
 
