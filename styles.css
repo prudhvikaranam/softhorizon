@@ -266,10 +266,12 @@ h3 {
 
 .footer {
     background-color: #313133;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 45px 0px;
     color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0px;
 }
 
 .footer div {
