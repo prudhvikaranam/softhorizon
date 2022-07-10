@@ -8,7 +8,7 @@
     <meta name="description" content="We work together to design, create and produce work
     that we are proud of for the folks that we believe in." />
     <meta name="keywords" content="softhorizon" />
-    <title>Soft Horizon</title>
+    <title>SoftHorizon Technologies</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,40 +22,47 @@
 </head>
 
 <body>
-    <div class="body-container" id="body-container">
+    <section class="body-container" id="body-container">
         <!-- Navigation -->
-        <div class="navigation-container" id="navigation-container">
-            <img src="./assets//logo.PNG" alt="softhorizon" srcset="" />
-            <div class="navHamburger" id="navHamburger">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="nav-links" id="nav-link">
-                <a href="">Home</a>
-                <a href="#services-container">Services</a>
-                <a href="#about-container">About Us</a>
-                <a href="#reviews-container">Reviews</a>
-                <a href="#contact-container">Contact Us</a>
+        <div id="navigator">
+            <div class="navigation-container" id="navigation-container">
+                <img src="./assets//logo.PNG" alt="softhorizon" srcset="" />
+                <div class="navHamburger" id="navHamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="nav-links" id="nav-link" onclick="navigate(event)">
+                    <a>Home</a>
+                    <a>Services</a>
+                    <a>About Us</a>
+                    <a>Reviews</a>
+                    <a>Contact Us</a>
+                </div>
             </div>
         </div>
 
-
         <div class="mobileNavigation" id="mobileNavigation">
             <div class="mobileNavcontainer" id="mobileNavcontainer">
-                <div class="closeNav" id="closeNav">
-                    <i class="fa fa-times" style="font-size:24px"></i>
+                <div class="topContainer" id="topContainer">
+                    <div></div>
+                    <div class="logo" id="logo">
+                        <img src="./assets//logo.PNG" alt="softhorizon" srcset="" />
+                    </div>
+                    <div class="closeNav" id="closeNav">
+                        <i class="fa fa-times" style="font-size:24px"></i>
+                    </div>
                 </div>
-                <div class="mobileNavLink" id="mobileNavLink">
-                    <a href="">Home</a>
-                    <a href="#services-container">Services</a>
-                    <a href="#about-container">About Us</a>
-                    <a href="#reviews-container">Reviews</a>
-                    <a href="#contact-container">Contact Us</a>
+                <div class="mobileNavLink" id="mobileNavLink" onclick="navigate(event)">
+                    <a>Home</a>
+                    <a>Services</a>
+                    <a>About Us</a>
+                    <a>Reviews</a>
+                    <a>Contact Us</a>
                 </div>
             </div>
         </div>
 
         <!-- Landing -->
-        <div class="landing-container" id="landing-container">
+        <section class="landing-container" id="landing-container">
             <div class="container" id="container">
                 <div class="quote" id="quote"></div>
                 <div class="quote1" id="quote1">
@@ -64,195 +71,202 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Services -->
-        <div class="services-container" id="services-container">
-            <h1>What We Do</h1>
-            <h2>
-                Softhorizon is a provider of IT services and software development services. We have helped organizations and companies improve business performance & enhance their competitiveness.
-            </h2>
-            <div class="container" id="container">
-                <div class="service" id="service">
-                    <h3>IT Support</h3>
-                    <div class="image" id="image">
-                        <img src="./assets/services-IT.jpg" alt="" srcset="" />
+        <section id="servicess">
+            <div class="services-container" id="services-container">
+                <h1>What We Do</h1>
+                <h2>
+                    Softhorizon is a provider of IT services and software development services. We have helped organizations and companies improve business performance & enhance their competitiveness.
+                </h2>
+                <div class="container" id="container">
+                    <div class="service" id="service">
+                        <h3>IT Support</h3>
+                        <div class="image" id="image">
+                            <img src="./assets/services-IT.jpg" alt="" srcset="" />
+                        </div>
+                        <p>
+                            We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
                     </div>
-                    <p>
-                        We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
-                </div>
-                <div class="service" id="service">
-                    <h3>Cloud Services & Data Management</h3>
-                    <div class="image" id="image">
-                        <img src="./assets/services-cloud.jpg" alt="" srcset="" />
+                    <div class="service" id="service">
+                        <h3>Cloud Services & Data Management</h3>
+                        <div class="image" id="image">
+                            <img src="./assets/services-cloud.jpg" alt="" srcset="" />
+                        </div>
+                        <p>
+                            We will work with you to establish the appropriate cloud size and available resources for your business.
+                        </p>
                     </div>
-                    <p>
-                        We will work with you to establish the appropriate cloud size and available resources for your business.
-                    </p>
-                </div>
-                <div class="service" id="service">
-                    <h3>Web and Android development</h3>
-                    <div class="image" id="image">
-                        <img src="./assets/services-web.png" alt="" srcset="" />
+                    <div class="service" id="service">
+                        <h3>Web and Android development</h3>
+                        <div class="image" id="image">
+                            <img src="./assets/services-web.png" alt="" srcset="" />
+                        </div>
+                        <p>
+                            We will work with you to establish the appropriate web development and android applications for your business.
+                        </p>
                     </div>
-                    <p>
-                        We will work with you to establish the appropriate web development and android applications for your business.
-                    </p>
-                </div>
-                <div class="service" id="service">
-                    <h3>Server Support</h3>
-                    <div class="image" id="image">
-                        <img src="./assets/services-server.jpg" alt="" srcset="" />
+                    <div class="service" id="service">
+                        <h3>Server Support</h3>
+                        <div class="image" id="image">
+                            <img src="./assets/services-server.jpg" alt="" srcset="" />
+                        </div>
+                        <p>
+                            We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
+                        </p>
                     </div>
-                    <p>
-                        We are available to consult with you or your staff when problems arise with your software. This service can be either remote or on-site assistance.
-                    </p>
                 </div>
             </div>
-        </div>
-
+        </section>
         <!-- About Us -->
-        <div class="about-container" id="about-container">
-            <h1>About Us</h1>
-            <div class="aboutheader" id="aboutheader">
-                <div class="aboutCompany" id="aboutCompany">
-                    <h4>Our Philosophy</h4>
-                    <p> To become part of your extended team and help companies successfully expand their tech capability.
-                    </p>
-                </div>
-                <div class="aboutCompany" id="aboutCompany">
-                    <h4>High ROI </h4>
-                    <p> Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to us, you can focus on what you do best--running your business.
-                    </p>
-                </div>
-                <div class="aboutCompany" id="aboutCompany">
-                    <h4>Satisfaction Guaranteed</h4>
-                    <p> That's why our goal is to provide an experience that is tailored to your company's needs. No matter the budget, we pride ourselves on providing professional customer service.</p>
-                </div>
-            </div>
-            <h2>Our Partners</h2>
-            <div class="partners" id="partners">
-                <div class="partner" id="partner">
-                    <img src="./assets/sysnet_partner.png" alt="sysnet_partner">
-                </div>
-                <div class="partner" id="partner">
-                    <img src="./assets/Uniserved_partner_black.png" alt="sysnet_partner">
-                </div>
-            </div>
-        </div>
 
+        <section id="about">
+            <div class="about-container" id="about-container">
+                <h1>About Us</h1>
+                <div class="aboutheader" id="aboutheader">
+                    <div class="aboutCompany" id="aboutCompany">
+                        <h4>Our Philosophy</h4>
+                        <p> To become part of your extended team and help companies successfully expand their tech capability.
+                        </p>
+                    </div>
+                    <div class="aboutCompany" id="aboutCompany">
+                        <h4>High ROI </h4>
+                        <p> Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to us, you can focus on what you do best--running your business.
+                        </p>
+                    </div>
+                    <div class="aboutCompany" id="aboutCompany">
+                        <h4>Satisfaction Guaranteed</h4>
+                        <p> That's why our goal is to provide an experience that is tailored to your company's needs. No matter the budget, we pride ourselves on providing professional customer service.</p>
+                    </div>
+                </div>
+                <h2>Our Partners</h2>
+                <div class="partners" id="partners">
+                    <div class="partner" id="partner">
+                        <img src="./assets/sysnet_partner.png" alt="sysnet_partner">
+                    </div>
+                    <div class="partner" id="partner">
+                        <img src="./assets/Uniserved_partner_black.png" alt="sysnet_partner">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Reviews -->
-        <div class="reviews-container" id="reviews-container">
-            <h1>Reviews</h1>
-            <div class="carousel" id="carousel">
-                <div class="owl-carousel owl-theme owl-loaded">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item">
-                                <div class="item-image" id="item-image">
-                                    <!-- <img src="./assets//javascript/avatars/avatar1.png" alt=""> -->
-                                    <p class="initial" id="initial">R</p>
-                                </div>
-                                <div class="item-stars" id="item-stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <p>What a wonderful bunch of developers and designers, its really great to see such a lovely team who works on such a beautiful design.</p>
-                                <p><b>Ramesha</b> - 25/6/2021</p>
-
-                            </div>
-                            <div class="owl-item">
-                                <div class="item-image" id="item-image">
-                                    <!-- <img src="./assets/javascript/avatars/avatar2.png" alt="" srcset=""> -->
-                                    <p class="initial" id="initial">R</p>
+        <section id="reviews">
+            <div class="reviews-container" id="reviews-container">
+                <h1>Reviews</h1>
+                <div class="carousel" id="carousel">
+                    <div class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <div class="item-image" id="item-image">
+                                        <!-- <img src="./assets//javascript/avatars/avatar1.png" alt=""> -->
+                                        <p class="initial" id="initial">R</p>
+                                    </div>
+                                    <div class="item-stars" id="item-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p>What a wonderful bunch of developers and designers, its really great to see such a lovely team who works on such a beautiful design.</p>
+                                    <p><b>Ramesha</b> - 25/6/2021</p>
 
                                 </div>
-                                <div class="item-stars" id="item-stars">
+                                <div class="owl-item">
+                                    <div class="item-image" id="item-image">
+                                        <!-- <img src="./assets/javascript/avatars/avatar2.png" alt="" srcset=""> -->
+                                        <p class="initial" id="initial">R</p>
 
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star "></span>
-                                </div>
-                                <p>Good Service by the engineer. I liked the overall service</p>
-                                <p><b>Renuka Prasad</b> - 30/8/2021</p>
+                                    </div>
+                                    <div class="item-stars" id="item-stars">
 
-                            </div>
-                            <div class="owl-item">
-                                <div class="item-image" id="item-image">
-                                    <!-- <img src="./assets/javascript/avatars/avatar3.png" alt="" srcset=""> -->
-                                    <p class="initial" id="initial">C</p>
-
-                                </div>
-                                <div class="item-stars" id="item-stars">
-
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <p>Good and Satisfied service by the team of SoftHorizon. Engineer's are doing a great job.
-                                </p>
-                                <p><b>Chethan</b> - 25/8/2021</p>
-                            </div>
-                            <div class="owl-item">
-                                <div class="item-image" id="item-image">
-                                    <!-- <img src="./assets/javascript/avatars/avatar4.png" alt="" srcset=""> -->
-                                    <p class="initial" id="initial">L</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                    <p>Good Service by the engineer. I liked the overall service</p>
+                                    <p><b>Renuka Prasad</b> - 30/8/2021</p>
 
                                 </div>
-                                <div class="item-stars" id="item-stars">
+                                <div class="owl-item">
+                                    <div class="item-image" id="item-image">
+                                        <!-- <img src="./assets/javascript/avatars/avatar3.png" alt="" srcset=""> -->
+                                        <p class="initial" id="initial">C</p>
 
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="item-stars" id="item-stars">
+
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p>Good and Satisfied service by the team of SoftHorizon. Engineer's are doing a great job.
+                                    </p>
+                                    <p><b>Chethan</b> - 25/8/2021</p>
                                 </div>
-                                <p>Fast and satisfied service. The team at SoftHorizon is young and energetic. I appreciate the effort they put in to deliver our product.</p>
-                                <p><b>Lohith</b> - 27/8/2021</p>
+                                <div class="owl-item">
+                                    <div class="item-image" id="item-image">
+                                        <!-- <img src="./assets/javascript/avatars/avatar4.png" alt="" srcset=""> -->
+                                        <p class="initial" id="initial">L</p>
+
+                                    </div>
+                                    <div class="item-stars" id="item-stars">
+
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p>Fast and satisfied service. The team at SoftHorizon is young and energetic. I appreciate the effort they put in to deliver our product.</p>
+                                    <p><b>Lohith</b> - 27/8/2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Contact -->
-        <div class="ourContact" id="ourContact">
-            <h1>Contact Us</h1>
-            <div class="contact-container" id="contact-container">
-                <div class="contact" id="contact">
-                    <div class="image" id="image">
-                        <img src="./assets/images//contact.jpg" alt="" srcset="" />
-                    </div>
-                    <div class="form" id="form">
 
-                        <h1>Contact Us</h1>
-                        <input type="text" placeholder="Name" /><br />
-                        <input type="tel" placeholder="Mobile" /><br />
-                        <input type="email" placeholder="Email ID" /><br />
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Please enter your Message"></textarea>
-                        <div class="submitBtn" id="submitBtn">
-                            <button class="btn-submit" id="btn-submit">Submit</button>
+        <section id="contact">
+            <div class="ourContact" id="ourContact">
+                <h1>Contact Us</h1>
+                <div class="contact-container" id="contact-container">
+                    <div class="contact" id="contact">
+                        <div class="image" id="image">
+                            <img src="./assets/images//contact.jpg" alt="" srcset="" />
+                        </div>
+                        <div class="form" id="form">
+
+                            <h1>Contact Us</h1>
+                            <input type="text" placeholder="Name" /><br />
+                            <input type="tel" placeholder="Mobile" /><br />
+                            <input type="email" placeholder="Email ID" /><br />
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Please enter your Message"></textarea>
+                            <div class="submitBtn" id="submitBtn">
+                                <button class="btn-submit" id="btn-submit">Submit</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="locationMap" id="locationMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3735732463406!2d77.59638281482172!3d12.94793069087141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x322717ddcd48221a!2zMTLCsDU2JzUyLjYiTiA3N8KwMzUnNTQuOSJF!5e0!3m2!1sen!2sin!4v1657176207152!5m2!1sen!2sin"
-                        height="450" style="border:0;width:100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="locationMap" id="locationMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3735732463406!2d77.59638281482172!3d12.94793069087141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x322717ddcd48221a!2zMTLCsDU2JzUyLjYiTiA3N8KwMzUnNTQuOSJF!5e0!3m2!1sen!2sin!4v1657176207152!5m2!1sen!2sin"
+                            height="450" style="border:0;width:100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
         <!-- Footer -->
 
-        <div class="footer" id="footer">
+        <section class="footer" id="footer">
             <div class="footerContent" id="footerContent">
                 <p>
                     Let us tailor a service package that meets your needs. Tell us a little about your business, and we will get back to you with some suggestions.
@@ -275,10 +289,15 @@
                     <br> Sunday: Closed
                 </p>
             </div>
+        </section>
+
         </div>
 
-    </div>
-    <script src="script.js"></script>
+
+        <div class="box"></div>
+        <div id="message">Please scroll to check if the box is visible</div>
+
+        <script src="script.js"></script>
 
 </body>
 
