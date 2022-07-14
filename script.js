@@ -59,7 +59,7 @@ function navigate(e) {
     e.preventDefault();
     let selectedNav = e.target.innerText.toLowerCase();
     if (selectedNav.includes('home')) {
-        document.getElementById('navigator').scrollIntoView();
+        document.getElementById('home').scrollIntoView();
     } else if (selectedNav.includes('services')) {
         document.getElementById('servicess').scrollIntoView();
     } else if (selectedNav.includes('about')) {
@@ -75,28 +75,26 @@ function navigate(e) {
 
 // for checking the current div
 
-document.addEventListener('scroll', (e) => {
+// document.addEventListener('scroll', (e) => {
 
-    let current = ''
-    let doc = document.querySelectorAll('section');
+//     let current = ''
+//     let doc = document.querySelectorAll('section');
 
-    doc.forEach((d) => {
-        const secTop = d.offsetTop;
-        const sectionHeight = d.clientHeight;
-        if (scrollY > secTop) {
-            current = d.getAttribute('id');
-        }
-        // isInViewport(d)
-    })
-    console.log(current);
-
-})
+//     doc.forEach((d) => {
+//         const secTop = d.offsetTop;
+//         const sectionHeight = d.clientHeight;
+//         if (scrollY > secTop) {
+//             current = d.getAttribute('id');
+//         }
+//         // isInViewport(d)
+//     })
+// })
 
 
-function isInViewport(el) {
-    // const rect = el.getBoundingClientRect();
-    // console.log(rect);
-    // return (
-    //     rect.top >= 0 || rect.bottom >= 0
-    // );
-}
+// function isInViewport(el) {
+//     // const rect = el.getBoundingClientRect();
+//     // console.log(rect);
+//     // return (
+//     //     rect.top >= 0 || rect.bottom >= 0
+//     // );
+// }
